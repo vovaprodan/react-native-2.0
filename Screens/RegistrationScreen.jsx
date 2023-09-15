@@ -15,7 +15,7 @@ export default function RegistrationScreen() {
             <TextInput style={styles.inputPas} placeholder="Пароль" autoComplete="password" />
       </View>
         <Text style={styles.textInput}>Показати</Text>
-          <Button style={styles.button} title="Зареєстуватися" />
+          <Button style={styles.button} title="Зареєстуватися" color="#FF6C00"  />
            <Text style={styles.title}>Вже є акаунт? Увійти</Text>
     </View>
   );
@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     marginBottom: 33,
   },
   input: {
+    paddingLeft: 16,
      height: 50,
     width: 343,
     borderWidth: 1,
@@ -49,26 +50,24 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   inputPas: {
+    paddingLeft: 16,
     height: 50,
     width: 343,
     borderWidth: 1,
     borderColor: "#E8E8E8",
     borderRadius: 6,
-    marginBottom: 16,
+    marginBottom: 43,
     position: 'relative'
   },
   textInput: {
     color: '#1B4371',
     position: 'absolute',
-   top: 16,
+    top: 310,
+   left: 285,
   },
   button: {
     flex: 1,
-     width: 343,
-    backgroundColor: "#FF6C00",
     color: '#FFFFFF',
-    borderRadius: 100,
-    padding: 16,
     fontSize: 16,
   },
   title: {
